@@ -1,0 +1,165 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	max-width: 100vw;
+}
+
+body {
+	font-family: sans-serif;
+}
+.hero {
+	background-color: #1f2937;
+	color: #f9faf8;
+	height: 60vh;
+}
+.header-body {
+	width: 80vw;
+	padding-top: 15px;
+	margin: auto;
+}
+.header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 100px;
+	padding-left: 135px;
+	padding-right: 135px;
+}
+
+.nav-links {
+	display: flex;
+	gap: 80px;
+}
+.nav-links a {
+	font-size: 18px;
+	color: #e5e7eb;
+	text-decoration: none;
+}
+.nav-links a:hover {
+	color: #86abf5;
+}
+.main {
+	display: flex;
+	gap: 100px;
+	align-items: start;
+	justify-content: center;
+	padding-left: 135px;
+	padding-right: 135px;
+}
+
+.header-logo {
+	font-size: 24px;
+	font-weight: bold;
+}
+.main-text {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+.main-text h1 {
+	font-size: 48px;
+	font-weight: bolder;
+}
+.main-text p {
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+.hero-img {
+	height: 300px;
+	width: 900px;
+}
+
+.btn {
+	height: auto;
+	width: 120px;
+	color: #f9faf8;
+	background-color: #3883f6;
+	font-weight: bold;
+	border: none;
+	border-radius: 5px;
+	padding: 15px;
+	font-size: 16px;
+}
+
+.btn:hover {
+	background-color: #77a5eb;
+	cursor: pointer;
+	color: #252525;
+}
+.info {
+	width: 60vw;
+	margin: 50px auto;
+	background-color: #fff;
+	height: 50vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.box {
+	height: 200px;
+	width: 200px;
+	border: 5px solid #3883f6;
+	border-radius: 10px;
+}
+.quote {
+	background-color: #e5e7eb;
+	height: 40vh;
+}
+blockquote {
+	width: 50vw;
+	padding: 100px 0;
+	margin: auto;
+}
+.quote-text {
+	padding: 0 4.5rem;
+	font-size: 36px;
+	font-style: italic;
+	font-weight: 300;
+	color: #1f2937;
+}
+.name {
+	font-size: 18px;
+	font-weight: bold;
+	text-align: end;
+	margin-top: 10px;
+}
+.signup {
+	background-color: #fff;
+	height: 40vh;
+}
+.calltoaction {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 50px;
+	width: 50vw;
+	padding: 70px;
+	margin: 100px auto 50px auto;
+	background-color: #3883f6;
+	border-radius: 10px;
+}
+.footer {
+	background-color: #1f2937;
+	height: 120px;
+}
+.footer p {
+	color: #e5e7eb;
+	text-align: center;
+	padding-top: 50px;
+}
+.calltoaction p {
+	font-size: 20px;
+	font-weight: bold;
+	color: #e5e7eb;
+}
+.btn--action {
+	border: solid #e5e7eb 3px;
+	border-radius: 8px;
+	color: #e5e7eb;
+	width: 250px;
+	height: 50px;
+}
