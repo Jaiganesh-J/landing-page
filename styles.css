@@ -73,6 +73,20 @@ body {
 	width: 900px;
 }
 
+.box img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.box-img {
+	height: 200px;
+	width: 200px;
+	transition: all 0.2s;
+}
+.box-img:hover {
+	transform: scale(1.1);
+}
 .btn {
 	height: auto;
 	width: 120px;
@@ -104,6 +118,7 @@ body {
 	width: 200px;
 	border: 5px solid #3883f6;
 	border-radius: 10px;
+	overflow: hidden;
 }
 .quote {
 	background-color: #e5e7eb;
