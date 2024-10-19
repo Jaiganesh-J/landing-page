@@ -9,8 +9,10 @@ html {
 }
 
 body {
-	font-family: "Arial", sans-serif;
+	font-family: "Raleway", sans-serif;
 	line-height: 1.6;
+	background-color: #f4f4f9;
+	color: #1f2937;
 }
 
 .hero {
@@ -19,34 +21,37 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 20px;
+	margin: 0 auto;
+	padding-bottom: 50px;
 }
 
 .header-body {
-	width: 80vw;
-	max-width: 1200px;
-	margin: auto;
+	width: 100%;
 }
 
 .header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-bottom: 40px;
+	padding: 5px 50px;
 }
 
 .header-logo {
-	font-size: 24px;
-	font-weight: bold;
+	font-size: 28px;
+	font-weight: 700;
+	font-family: "Playfair Display", serif;
+	color: #86abf5;
 }
 
 .nav-links {
 	display: flex;
-	gap: 20px;
+	justify-content: space-between;
+	gap: 60px;
 }
 
 .nav-links a {
 	font-size: 18px;
+	font-weight: 500;
 	color: #e5e7eb;
 	text-decoration: none;
 }
@@ -57,31 +62,36 @@ body {
 
 .main {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
+	padding: 20px;
+	margin: 10px;
+	gap: 20px;
 }
 
 .main-text {
-	max-width: 50%;
+	max-width: 60%;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	justify-content: flex-start;
+	align-items: start;
+	justify-content: center;
 }
 
 .main-text h1 {
 	font-size: 48px;
-	font-weight: bolder;
+	font-family: "Playfair Display", serif;
+	color: #f9faf8;
 }
 
 .main-text p {
 	font-size: 18px;
 	margin-top: 10px;
+	font-weight: 300;
+	color: #e5e7eb;
 }
 
 .hero-image-container {
-	max-width: 50%;
+	max-width: 30%;
 }
 
 .hero-img {
@@ -101,7 +111,7 @@ body {
 .box {
 	flex: 1 1 200px;
 	margin: 10px;
-	border: 5px solid #3883f6;
+	border: 2px solid #3883f6;
 	border-radius: 10px;
 	overflow: hidden;
 }
@@ -125,6 +135,7 @@ body {
 .quote-text {
 	font-size: 36px;
 	font-style: italic;
+	font-family: "Playfair Display", serif;
 	color: #1f2937;
 }
 
@@ -150,12 +161,25 @@ body {
 	padding: 15px;
 	font-size: 16px;
 	margin-top: 20px;
+	transition: background-color 0.3s ease;
 }
 
 .btn:hover {
 	background-color: #77a5eb;
 	cursor: pointer;
 	color: #252525;
+}
+
+.btn--action {
+	color: #1f2937;
+	background-color: transparent;
+	border: solid 2px #1f2937;
+	font-weight: bold;
+}
+
+.btn--action:hover {
+	background-color: #1f2937;
+	color: #fff;
 }
 
 .footer {
@@ -169,27 +193,119 @@ body {
 }
 
 @media (max-width: 768px) {
-	.header {
-		flex-direction: column;
-		align-items: center;
-	}
-
-	.main {
-		flex-direction: column;
-		align-items: center;
-	}
-
-	.main-text {
-		text-align: center;
-	}
-
-	.hero-img {
-		max-width: 100%;
+	.hero {
 		height: auto;
+		padding: 40px 20px;
+	}
+
+	.main-text h1 {
+		font-size: 28px;
+	}
+
+	.main-text p {
+		font-size: 14px;
 	}
 
 	.info {
 		flex-direction: column;
 		align-items: center;
+	}
+
+	.box {
+		width: 100%;
+		max-width: 300px;
+	}
+
+	.quote-text {
+		font-size: 20px;
+	}
+
+	.calltoaction {
+		width: 100%;
+		padding: 40px 20px;
+	}
+
+	.footer p {
+		font-size: 14px;
+	}
+	.header-body {
+		width: 95vw;
+		max-width: 770px;
+	}
+}
+
+@media (max-width: 600px) {
+	.hero {
+		flex-direction: column;
+		padding: 10px;
+		height: auto;
+	}
+
+	.main {
+		flex-direction: column;
+		align-items: center;
+		padding: 0;
+		gap: 10px;
+	}
+
+	.main-text {
+		align-items: center;
+		text-align: center;
+		padding: 0;
+	}
+
+	.main-text h1 {
+		font-size: 24px;
+	}
+
+	.main-text p {
+		font-size: 14px;
+	}
+
+	.hero-img {
+		max-width: 100%;
+		height: auto;
+		margin: 20px 0;
+	}
+
+	.info {
+		flex-direction: column;
+		align-items: center;
+		padding: 0;
+	}
+
+	.box {
+		width: 100%;
+		max-width: 300px;
+		margin-bottom: 20px;
+	}
+
+	.quote-text {
+		font-size: 20px;
+	}
+
+	.calltoaction {
+		width: 100%;
+		padding: 40px 20px;
+	}
+
+	.footer p {
+		font-size: 14px;
+	}
+
+	.header {
+		flex-direction: column;
+		padding: 5px 10px;
+	}
+	.nav-links {
+		justify-content: space-around;
+		gap: 15px;
+		font-size: 12px;
+	}
+	.main-text {
+		max-width: 70%;
+	}
+	.hero-image-container {
+		max-width: 70%;
 	}
 }
