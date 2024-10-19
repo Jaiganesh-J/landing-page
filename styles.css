@@ -9,84 +9,136 @@ html {
 }
 
 body {
-	font-family: sans-serif;
+	font-family: "Arial", sans-serif;
+	line-height: 1.6;
 }
+
 .hero {
 	background-color: #1f2937;
 	color: #f9faf8;
-	height: 60vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
 }
+
 .header-body {
 	width: 80vw;
-	padding-top: 15px;
+	max-width: 1200px;
 	margin: auto;
 }
+
 .header {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 100px;
-	padding-left: 135px;
-	padding-right: 135px;
-}
-
-.nav-links {
-	display: flex;
-	gap: 80px;
-}
-.nav-links a {
-	font-size: 18px;
-	color: #e5e7eb;
-	text-decoration: none;
-}
-.nav-links a:hover {
-	color: #86abf5;
-}
-.main {
-	display: flex;
-	gap: 100px;
-	align-items: start;
-	justify-content: center;
-	padding-left: 135px;
-	padding-right: 135px;
+	align-items: center;
+	margin-bottom: 40px;
 }
 
 .header-logo {
 	font-size: 24px;
 	font-weight: bold;
 }
+
+.nav-links {
+	display: flex;
+	gap: 20px;
+}
+
+.nav-links a {
+	font-size: 18px;
+	color: #e5e7eb;
+	text-decoration: none;
+}
+
+.nav-links a:hover {
+	color: #86abf5;
+}
+
+.main {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
 .main-text {
+	max-width: 50%;
 	display: flex;
 	flex-direction: column;
-	gap: 40px;
+	align-items: center;
+	justify-content: flex-start;
 }
+
 .main-text h1 {
 	font-size: 48px;
 	font-weight: bolder;
 }
+
 .main-text p {
 	font-size: 18px;
-	line-height: 1.5;
+	margin-top: 10px;
+}
+
+.hero-image-container {
+	max-width: 50%;
 }
 
 .hero-img {
-	height: 300px;
-	width: 900px;
+	width: 100%;
+	border-radius: 10px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.box img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+.info {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 80vw;
+	margin: 50px auto;
+}
+
+.box {
+	flex: 1 1 200px;
+	margin: 10px;
+	border: 5px solid #3883f6;
+	border-radius: 10px;
+	overflow: hidden;
 }
 
 .box-img {
-	height: 200px;
-	width: 200px;
-	transition: all 0.2s;
+	width: 100%;
+	height: 100%;
+	transition: transform 0.2s;
 }
+
 .box-img:hover {
-	transform: scale(1.1);
+	transform: scale(1.05);
 }
+
+.quote {
+	background-color: #e5e7eb;
+	padding: 40px;
+	text-align: center;
+}
+
+.quote-text {
+	font-size: 36px;
+	font-style: italic;
+	color: #1f2937;
+}
+
+.signup {
+	background-color: #fff;
+	padding: 40px;
+	text-align: center;
+}
+
+.calltoaction {
+	max-width: 80vw;
+	margin: auto;
+}
+
 .btn {
 	height: auto;
 	width: 120px;
@@ -97,6 +149,7 @@ body {
 	border-radius: 5px;
 	padding: 15px;
 	font-size: 16px;
+	margin-top: 20px;
 }
 
 .btn:hover {
@@ -104,77 +157,39 @@ body {
 	cursor: pointer;
 	color: #252525;
 }
-.info {
-	width: 60vw;
-	margin: 50px auto;
-	background-color: #fff;
-	height: 50vh;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-.box {
-	height: 200px;
-	width: 200px;
-	border: 5px solid #3883f6;
-	border-radius: 10px;
-	overflow: hidden;
-}
-.quote {
-	background-color: #e5e7eb;
-	height: 40vh;
-}
-blockquote {
-	width: 50vw;
-	padding: 100px 0;
-	margin: auto;
-}
-.quote-text {
-	padding: 0 4.5rem;
-	font-size: 36px;
-	font-style: italic;
-	font-weight: 300;
-	color: #1f2937;
-}
-.name {
-	font-size: 18px;
-	font-weight: bold;
-	text-align: end;
-	margin-top: 10px;
-}
-.signup {
-	background-color: #fff;
-	height: 40vh;
-}
-.calltoaction {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	gap: 50px;
-	width: 50vw;
-	padding: 70px;
-	margin: 100px auto 50px auto;
-	background-color: #3883f6;
-	border-radius: 10px;
-}
+
 .footer {
 	background-color: #1f2937;
-	height: 120px;
+	padding: 20px;
+	text-align: center;
 }
+
 .footer p {
 	color: #e5e7eb;
-	text-align: center;
-	padding-top: 50px;
 }
-.calltoaction p {
-	font-size: 20px;
-	font-weight: bold;
-	color: #e5e7eb;
-}
-.btn--action {
-	border: solid #e5e7eb 3px;
-	border-radius: 8px;
-	color: #e5e7eb;
-	width: 250px;
-	height: 50px;
+
+@media (max-width: 768px) {
+	.header {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.main {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.main-text {
+		text-align: center;
+	}
+
+	.hero-img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.info {
+		flex-direction: column;
+		align-items: center;
+	}
 }
